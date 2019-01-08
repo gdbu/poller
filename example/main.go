@@ -1,14 +1,3 @@
-# Poller
-Poller is a file watching library which will produce the following events:
-
-- CREATE
-- WRITE
-- CHMOD
-- REMOVE
-
-
-## Usage
-```go
 package main
 
 import (
@@ -67,5 +56,3 @@ func main() {
 	time.Sleep(300 * time.Millisecond)
 	p.Close()
 }
-
-```
