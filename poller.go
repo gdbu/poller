@@ -38,8 +38,11 @@ func New(filename string, fn OnEvent) (pp *Poller, err error) {
 
 	p.filename = filename
 	p.onEvent = fn
+
+	// Set initial file information
 	info, _ := os.Stat(p.filename)
 	p.updateLast(info)
+
 	pp = &p
 	return
 }
