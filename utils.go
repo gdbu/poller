@@ -1,6 +1,8 @@
 package poller
 
-import "os"
+import (
+	"os"
+)
 
 func areBothEmpty(last, info os.FileInfo) (empty bool) {
 	if last != nil {

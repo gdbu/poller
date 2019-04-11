@@ -54,7 +54,8 @@ type Poller struct {
 	filename string
 	onEvent  OnEvent
 
-	last os.FileInfo
+	last       os.FileInfo
+	writeState bool
 
 	closed atoms.Bool
 }
@@ -92,6 +93,9 @@ func (p *Poller) poll() (err error) {
 		// both need to fire
 
 		if wasUpdated(p.last, info) {
+			p.writeState = true
+		} else if p.writeState {
+			p.writeState = false
 			// Fire write event
 			p.onEvent(EventWrite)
 		}
