@@ -29,7 +29,8 @@ func main() {
 	if p, err = poller.New("./.test_file", func(e poller.Event) {
 		log.Println("Event received!", e)
 	}); err != nil {
-		log.Fatal(err)
+		out.Errorf("error during Init: %v", err)
+        return
 	}
 
 	go p.Run(0)
@@ -37,31 +38,36 @@ func main() {
 	time.Sleep(300 * time.Millisecond)
 
 	if f, err = os.Create("./.test_file"); err != nil {
-		log.Fatal(err)
+		out.Errorf("error during Init: %v", err)
+        return
 	}
 
 	time.Sleep(300 * time.Millisecond)
 
 	if _, err = f.WriteString("Hello world!"); err != nil {
-		log.Fatal(err)
+		out.Errorf("error during Init: %v", err)
+        return
 	}
 
 	time.Sleep(300 * time.Millisecond)
 
 	if err = f.Close(); err != nil {
-		log.Fatal(err)
+		out.Errorf("error during Init: %v", err)
+        return
 	}
 
 	time.Sleep(300 * time.Millisecond)
 
 	if err = os.Chmod("./.test_file", 0655); err != nil {
-		log.Fatal(err)
+		out.Errorf("error during Init: %v", err)
+        return
 	}
 
 	time.Sleep(300 * time.Millisecond)
 
 	if err = os.Remove("./.test_file"); err != nil {
-		log.Fatal(err)
+		out.Errorf("error during Init: %v", err)
+        return
 	}
 
 	time.Sleep(300 * time.Millisecond)
