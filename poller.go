@@ -5,8 +5,8 @@ import (
 	"sync"
 	"time"
 
-	"github.com/Hatch1fy/errors"
 	"github.com/hatchify/atoms"
+	"github.com/hatchify/errors"
 )
 
 const (
