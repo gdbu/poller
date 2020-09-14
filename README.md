@@ -16,7 +16,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/Hatch1fy/poller"
+	"github.com/hatchify/poller"
 )
 
 func main() {
