@@ -1,4 +1,4 @@
-module github.com/Hatch1fy/poller
+module github.com/hatchify/poller
 
 go 1.14
 
