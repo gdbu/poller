@@ -5,7 +5,7 @@ import (
 	"os"
 	"time"
 
-	"github.com/hatchify/poller"
+	"github.com/gdbu/poller"
 )
 
 func main() {
