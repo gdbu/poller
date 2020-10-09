@@ -5,7 +5,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/hatchify/atoms"
+	"github.com/gdbu/atoms"
 	"github.com/hatchify/errors"
 )
 
