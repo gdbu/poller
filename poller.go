@@ -6,7 +6,7 @@ import (
 	"time"
 
 	"github.com/gdbu/atoms"
-	"github.com/hatchify/errors"
+	"github.com/gdbu/errors"
 )
 
 const (

@@ -1,4 +1,4 @@
 github.com/gdbu/atoms v1.0.1 h1:7vSKoMNHQXQ0iMnDKjTDbOjhPVHZxgqiW4KPpKzGjyY=
 github.com/gdbu/atoms v1.0.1/go.mod h1:NAF1/IvAK0xby1xvmlRLBpapkWBhWL8dlcsxVDGuUpo=
-github.com/hatchify/errors v0.4.82 h1:o7eB9r1X3Sx7PBRRXMCaAm+vXcoQLE4ZOesIv4oK36Q=
-github.com/hatchify/errors v0.4.82/go.mod h1:niCrsPjs0fFes147TgJ0LSUVdtavQTUvBxNoJm9Vew0=
+github.com/gdbu/errors v0.5.0 h1:Eind/t7U7V8ALS9U5BGl4Sgf/o4OrAZHYXvZO33Hbd0=
+github.com/gdbu/errors v0.5.0/go.mod h1:npjb1xcBE8Z692We7B/woYfmYpfOQj/alXNXZ3TT2YQ=
